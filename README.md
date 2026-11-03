@@ -66,11 +66,12 @@ history cache alone.
 ### Keyboard shortcut
 
 The plugin doesn't change your Hyprland config. To open the panel from the keyboard, add a binding yourself.
-Super+Alt+K is free in Omarchy's defaults:
+It opens with the message box focused, so you can start typing at once. Esc closes it again. Super+Shift+K
+is free in Omarchy's defaults (check yours with `omarchy menu keybindings --print`):
 
 ```lua
 -- ~/.config/hypr/bindings.lua
-o.bind("SUPER + ALT + K", "Kindroid chat", "omarchy-shell shell toggle io.github.z23.kindroid")
+o.bind("SUPER + SHIFT + K", "Kindroid chat", { panel = "io.github.z23.kindroid" })
 ```
 
 ## Use
