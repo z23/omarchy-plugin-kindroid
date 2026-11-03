@@ -1,0 +1,5 @@
+#!/bin/sh
+# Portable checks: no shell or display needed.
+set -eu
+cd "$(dirname "$0")/.."
+node --test tests/
